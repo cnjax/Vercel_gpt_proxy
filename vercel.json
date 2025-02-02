@@ -1,9 +1,2 @@
 {
-  "rewrites": [
-    {
-      "source": "/:path*",
-      "destination": "https://showip.net/:path*",
-      "permanent": true
-    }
-  ]
 }
