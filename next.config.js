@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  trailingSlash: true,
   async rewrites() {
     return [
       {
@@ -8,7 +9,7 @@ module.exports = {
       },
       {
         source: '/api/:path*',
-        destination: process.env.API_URL + '/api/:path*',
+        destination: process.env.API_URL + '/api/:path*/',
       },
       {
         source: '/:path*/',
@@ -16,7 +17,7 @@ module.exports = {
       },
       {
         source: '/:path*',
-        destination: process.env.API_URL + '/:path*',
+        destination: process.env.API_URL + '/:path*/',
       }
     ]
   },
