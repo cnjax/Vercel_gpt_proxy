@@ -1,14 +1,6 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/api.js"
-    }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "maxDuration": 60
-    }
-  }
+  "rewrites": [
+    { "source": "/:url*", "destination": "http://160.191.77.59:2023/:url*" },
+    { "source": "/:url*/", "destination": "http://160.191.77.59:2023/:url*/" }
+  ]
 }
