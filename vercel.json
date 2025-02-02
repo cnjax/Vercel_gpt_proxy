@@ -1,2 +1,14 @@
 {
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/api.js"
+    }
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 60
+    }
+  }
 }
